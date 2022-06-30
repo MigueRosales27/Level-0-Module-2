@@ -3,7 +3,7 @@ from tkinter import simpledialog, Tk
 from PIL import Image, ImageTk
 from playsound import playsound
 
-
+window = None
 
 
 def animals():
@@ -14,35 +14,7 @@ def animals():
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
 
-
     # TODO 2. Make it so that the user can keep entering new animals.
-
-
-    while True:
-        user_answer = simpledialog.askstring(None, " Do you want a cat, dog, duck, llama, or cow? ")
-
-        if user_answer == "cow":
-             moo()
-
-        elif user_answer == "dog":
-            woof()
-
-        elif user_answer == "duck":
-            quack()
-
-        elif user_answer == "cat":
-            meow()
-
-        elif user_answer == "llama":
-            llama_scream()
-
-        elif user_answer == "exit":
-            exit()
-
-        else:
-            ask()
-
-
 
     # TODO 3. If the user enters 'exit', stop the program
 
@@ -71,10 +43,6 @@ def show_image(filename=None):
     # images can be shown
     window = Tk()
     window.withdraw()
-
-def ask():
-    user_answer = simpledialog.askstring(None, " Do you want a cat, dog, duck, llama, or cow? ")
-
 
 
 def moo():
