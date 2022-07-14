@@ -5,7 +5,11 @@ if __name__ == '__main__':
 
     window = Tk()
     window.withdraw()
+<<<<<<< HEAD
 
+=======
+random_number = (1,7)
+>>>>>>> 658340c (Initial commit)
     # TODO 1) Get 6 random numbers to put on your lottery ticket
 
     # TODO 2) Display the selected numbers to the user in a pop-up

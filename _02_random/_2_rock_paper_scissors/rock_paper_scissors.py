@@ -9,7 +9,11 @@ def onclick(args):
 
     # TODO 2) Change the value of opponent_selection to be a random number
     #  between 1 and 3
+<<<<<<< HEAD
     opponent_selection = 1
+=======
+    opponent_selection = random.randint(1,4)
+>>>>>>> 658340c (Initial commit)
 
     # TODO 3) Run the program again. Is the result different?
 
