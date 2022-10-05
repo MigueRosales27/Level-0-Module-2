@@ -3,6 +3,7 @@ from tkinter import simpledialog, Tk
 from PIL import Image, ImageTk
 from playsound import playsound
 
+
 window = None
 
 
@@ -11,8 +12,25 @@ def animals():
     window = Tk()
     window.withdraw()
 
+    user_answer = simpledialog.askstring(None, "what animal do you want?")
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
+    if(user_answer=="dog"):
+        woof();
+    elif(user_answer=="cow"):
+        moo();
+
+    elif (user_answer == "cat"):
+        meow()
+
+    elif (user_answer == "duck"):
+        quack()
+    elif (user_answer == "llama"):
+        llama_scream()
+    else:
+        user_answer = simpledialog.askstring(None, "what animal do you want?")
+
+
 
     # TODO 2. Make it so that the user can keep entering new animals.
 
